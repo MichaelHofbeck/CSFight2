@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/cobblestone.png-26eca91c624c837308ac4400bbc79ffd.stex"
+path="res://.import/SimpleRock.png-80bbf022441724cf7e40e852e0c667f6.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://World/cobblestone.png"
-dest_files=[ "res://.import/cobblestone.png-26eca91c624c837308ac4400bbc79ffd.stex" ]
+source_file="res://World/SimpleRock.png"
+dest_files=[ "res://.import/SimpleRock.png-80bbf022441724cf7e40e852e0c667f6.stex" ]
 
 [params]
 
@@ -19,7 +19,7 @@ compress/lossy_quality=0.7
 compress/hdr_mode=0
 compress/bptc_ldr=0
 compress/normal_map=0
-flags/repeat=1
+flags/repeat=0
 flags/filter=false
 flags/mipmaps=false
 flags/anisotropic=false
