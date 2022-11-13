@@ -16,7 +16,7 @@ func _on_Button1_pressed():
 
 
 func _on_Button2_pressed():
-	$WorldYSort/Player.ATTACK_DAMAGE += 20
+	#$WorldYSort/Player.damage += 20
 	self.get_child(3).show()
 	self.get_child(3).transition()
 	yield(get_tree().create_timer(1), "timeout")
