@@ -9,7 +9,7 @@ extends Node2D
 func _ready():
 	self.get_child(1).visible = 0
 	
-func _input(event):
+func _input(_event):
 	var stage = get_node("../RichTextLabel").next - 1
 	if stage == 2:
 		self.get_child(0).visible = 0
