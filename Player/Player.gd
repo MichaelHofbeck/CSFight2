@@ -70,6 +70,7 @@ func attack_state(detla):
 	animationState.travel("Attack")
 	
 func roll_state(delta):
+	hurtBox.start_inv(0.8)
 	velocity = roll_vector * ROLL_SPEED
 	animationState.travel("Roll")
 	move()
