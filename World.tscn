@@ -569,7 +569,7 @@ position = Vector2( 32, 128 )
 [node name="Pebble5" parent="YSort/Pebbles" instance=ExtResource( 1 )]
 position = Vector2( 32, 112 )
 
-[node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="YSort/StaticBody2D"]
+[node name="YSort@StaticBody2D@CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
 position = Vector2( 2, 1 )
 polygon = PoolVector2Array( -1, -2, 0, 181, -5, 188, -11, -23, 404, -14, 387, 203, 0, 181, 329, 180, 320, 179, 320, 0 )
 
@@ -579,5 +579,3 @@ margin_bottom = 14.0
 script = ExtResource( 8 )
 
 [node name="DialogueBox" parent="DialougeText" instance=ExtResource( 9 )]
-
-
