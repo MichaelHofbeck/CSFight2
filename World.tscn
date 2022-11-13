@@ -1,4 +1,4 @@
-[gd_scene load_steps=66 format=2]
+[gd_scene load_steps=65 format=2]
 
 [ext_resource path="res://World/Pebble.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -11,9 +11,8 @@
 [ext_resource path="res://DialougeBox.tscn" type="PackedScene" id=9]
 [ext_resource path="res://TransitionScreen.tscn" type="PackedScene" id=10]
 [ext_resource path="res://World.gd" type="Script" id=11]
-[ext_resource path="res://Enemies/Maniac.tscn" type="PackedScene" id=12]
+[ext_resource path="res://Music/the-beat-of-nature-122841.mp3" type="AudioStream" id=12]
 [ext_resource path="res://World/CollisionTile.tscn" type="PackedScene" id=13]
-[ext_resource path="res://Enemies/Carl.tscn" type="PackedScene" id=14]
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=15]
 
 [sub_resource type="TileSet" id=1]
@@ -517,6 +516,7 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 script = ExtResource( 11 )
 
 [node name="TransitionScreen" parent="." instance=ExtResource( 10 )]
+visible = false
 
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 4 )
@@ -550,18 +550,6 @@ tile_data = PoolIntArray( -1, 0, 0, -65536, 0, 0, -65535, 0, 0, -65534, 0, 0, -6
 
 [node name="Player" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 120, 66 )
-
-[node name="Carl" parent="YSort" instance=ExtResource( 14 )]
-position = Vector2( 216, 72 )
-
-[node name="Maniac" parent="YSort" instance=ExtResource( 12 )]
-position = Vector2( 152, 104 )
-
-[node name="Maniac2" parent="YSort" instance=ExtResource( 12 )]
-position = Vector2( 192, 128 )
-
-[node name="Maniac3" parent="YSort" instance=ExtResource( 12 )]
-position = Vector2( 96, 136 )
 
 [node name="Pebbles" type="YSort" parent="YSort"]
 
@@ -603,5 +591,12 @@ margin_bottom = 14.0
 script = ExtResource( 8 )
 
 [node name="DialogueBox" parent="DialougeText" instance=ExtResource( 9 )]
+visible = false
+position = Vector2( 0, -16 )
 
 [node name="HealthUI" parent="." instance=ExtResource( 15 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 12 )
+volume_db = -19.0
+autoplay = true
