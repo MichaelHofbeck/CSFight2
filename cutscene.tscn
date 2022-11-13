@@ -1,21 +1,51 @@
-[gd_scene load_steps=4 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Enemies/bh_front.png" type="Texture" id=1]
 [ext_resource path="res://cutscene_text.gd" type="Script" id=2]
 [ext_resource path="res://Fonts/montreal/Montreal.tres" type="DynamicFont" id=3]
+[ext_resource path="res://World/chat_bubble.png" type="Texture" id=4]
+[ext_resource path="res://World/hell_background.png" type="Texture" id=5]
+[ext_resource path="res://World/cs1_sign.png" type="Texture" id=6]
+[ext_resource path="res://animate_sprites.gd" type="Script" id=7]
+[ext_resource path="res://Enemies/bh_back.png" type="Texture" id=8]
 
 [node name="Node2D" type="Node2D"]
 
-[node name="BhFront" type="Sprite" parent="."]
-position = Vector2( 241, 93 )
+[node name="HellBackground" type="Sprite" parent="."]
+scale = Vector2( 0.179688, 0.140625 )
+texture = ExtResource( 5 )
+centered = false
+region_enabled = true
+region_rect = Rect2( 0, 0, 1792, 1280 )
+
+[node name="MobSprites" type="Node2D" parent="."]
+script = ExtResource( 7 )
+
+[node name="BhFront" type="Sprite" parent="MobSprites"]
+position = Vector2( 264, 93 )
 scale = Vector2( 2.51563, 2.64063 )
 texture = ExtResource( 1 )
+
+[node name="BhBack" type="Sprite" parent="MobSprites"]
+position = Vector2( 258, 110 )
+scale = Vector2( 2.33594, 2.5625 )
+texture = ExtResource( 8 )
+
+[node name="ChatBubble" type="Sprite" parent="MobSprites"]
+position = Vector2( 121, 90.5 )
+scale = Vector2( 5.1875, 5.45313 )
+texture = ExtResource( 4 )
+
+[node name="Cs1Sign" type="Sprite" parent="."]
+position = Vector2( 257, 36 )
+texture = ExtResource( 6 )
 
 [node name="RichTextLabel" type="RichTextLabel" parent="."]
 margin_left = 15.0
 margin_top = 13.0
 margin_right = 208.0
 margin_bottom = 91.0
+custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/mono_font = ExtResource( 3 )
 custom_fonts/normal_font = ExtResource( 3 )
 script = ExtResource( 2 )
