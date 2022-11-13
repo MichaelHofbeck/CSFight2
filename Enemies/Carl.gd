@@ -106,6 +106,9 @@ func _physics_process(delta):
 				state = IDLE
 	velocity = move_and_slide(velocity)
 	
+func dec_health():
+	stats.set_health(5)
+	
 			
 func seek_player():
 	if playerDetectionZone.can_see_player():
