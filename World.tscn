@@ -1,4 +1,4 @@
-[gd_scene load_steps=60 format=2]
+[gd_scene load_steps=61 format=2]
 
 [ext_resource path="res://World/Pebble.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -9,6 +9,7 @@
 [ext_resource path="res://World/CliffTileset2.png" type="Texture" id=7]
 [ext_resource path="res://Label.gd" type="Script" id=8]
 [ext_resource path="res://DialougeBox.tscn" type="PackedScene" id=9]
+[ext_resource path="res://World/CollisionTile.tscn" type="PackedScene" id=10]
 
 [sub_resource type="TileSet" id=1]
 0/name = "SandTileSet.png 0"
@@ -527,6 +528,9 @@ cell_size = Vector2( 32, 32 )
 format = 1
 tile_data = PoolIntArray( -65533, 0, 0, -65532, 0, 65536, -65531, 0, 65536, 3, 0, 65536, 4, 0, 65536, 5, 0, 0, 8, 0, 1, 9, 0, 1, 10, 0, 65536, 65540, 0, 65536, 65544, 0, 65536, 65545, 0, 65536, 65546, 0, 1, 131081, 0, 1, 131082, 0, 0, 262143, 0, 65536, 196608, 0, 0, 327679, 0, 65536, 262144, 0, 1, 262150, 0, 1, 262151, 0, 65537, 327685, 0, 65537, 327686, 0, 65537, 327687, 0, 1, 327688, 0, 65537, 393221, 0, 0, 393222, 0, 65537, 393223, 0, 65536, 393224, 0, 0 )
 
+[node name="CollisionTile" parent="." instance=ExtResource( 10 )]
+tile_data = PoolIntArray( -65536, 0, 0, -65535, 0, 0, -65534, 0, 0, -65533, 0, 0, -65524, 0, 0, 65535, 0, 0, 131071, 0, 0, 196607, 0, 0, 393236, 0, 0, 458772, 0, 0, 524308, 0, 0, 589844, 0, 0, 720895, 0, 0, 786432, 0, 0, 786433, 0, 0, 786434, 0, 0, 786435, 0, 0, 786436, 0, 0, 786437, 0, 0, 786438, 0, 0, 786439, 0, 0, 786440, 0, 0, 786441, 0, 0, 786450, 0, 0, 786451, 0, 0, 786452, 0, 0 )
+
 [node name="CliffTiles" type="TileMap" parent="."]
 tile_set = SubResource( 2 )
 cell_size = Vector2( 32, 32 )
@@ -572,10 +576,6 @@ position = Vector2( 32, 128 )
 
 [node name="Pebble5" parent="YSort/Pebbles" instance=ExtResource( 1 )]
 position = Vector2( 32, 112 )
-
-[node name="YSort@StaticBody2D@CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2( 2, 1 )
-polygon = PoolVector2Array( -1, -2, 0, 181, -5, 188, -11, -23, 404, -14, 387, 203, 0, 181, 329, 180, 320, 179, 320, 0 )
 
 [node name="DialougeText" type="Label" parent="."]
 margin_right = 40.0
