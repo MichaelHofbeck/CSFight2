@@ -11,7 +11,6 @@ func _ready():
 	
 func _input(event):
 	var stage = get_node("../RichTextLabel").next - 1
-	print(stage)
 	if stage == 2:
 		self.get_child(0).visible = 0
 		self.get_child(1).visible = 1
