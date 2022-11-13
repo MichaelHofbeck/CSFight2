@@ -1,4 +1,4 @@
-[gd_scene load_steps=62 format=2]
+[gd_scene load_steps=63 format=2]
 
 [ext_resource path="res://World/Pebble.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -11,6 +11,7 @@
 [ext_resource path="res://DialougeBox.tscn" type="PackedScene" id=9]
 [ext_resource path="res://TransitionScreen.tscn" type="PackedScene" id=10]
 [ext_resource path="res://World.gd" type="Script" id=11]
+[ext_resource path="res://Enemies/Maniac.tscn" type="PackedScene" id=12]
 
 [sub_resource type="TileSet" id=1]
 0/name = "SandTileSet.png 0"
@@ -512,6 +513,8 @@ points = PoolVector2Array( 0, 0, 32, 0, 32, 32, 0, 32 )
 [node name="World" type="Node2D"]
 script = ExtResource( 11 )
 
+[node name="TransitionScreen" parent="." instance=ExtResource( 10 )]
+
 [node name="Sprite" type="Sprite" parent="."]
 texture = ExtResource( 4 )
 centered = false
@@ -538,6 +541,9 @@ format = 1
 tile_data = PoolIntArray( -65533, 0, 0, -65532, 0, 1, -65531, 0, 2, 3, 0, 131072, 4, 0, 65544, 5, 0, 131074, 8, 0, 0, 9, 0, 1, 10, 0, 2, 65540, 0, 131075, 65544, 0, 131072, 65545, 0, 65542, 65546, 0, 65538, 131081, 0, 131072, 131082, 0, 131074, 262143, 0, 0, 196608, 0, 2, 327679, 0, 131072, 262144, 0, 131074, 262150, 0, 0, 262151, 0, 2, 327685, 0, 0, 327686, 0, 131078, 327687, 0, 131077, 327688, 0, 2, 393221, 0, 131072, 393222, 0, 131073, 393223, 0, 131073, 393224, 0, 131074 )
 
 [node name="YSort" type="YSort" parent="."]
+
+[node name="Maniac" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 152, 104 )
 
 [node name="Player" parent="YSort" instance=ExtResource( 2 )]
 position = Vector2( 120, 66 )
@@ -576,9 +582,11 @@ position = Vector2( 32, 128 )
 [node name="Pebble5" parent="YSort/Pebbles" instance=ExtResource( 1 )]
 position = Vector2( 32, 112 )
 
-[node name="YSort@StaticBody2D@CollisionPolygon2D" type="CollisionPolygon2D" parent="."]
-position = Vector2( 2, 1 )
-polygon = PoolVector2Array( -1, -2, 0, 181, -5, 188, -11, -23, 404, -14, 387, 203, 0, 181, 329, 180, 320, 179, 320, 0 )
+[node name="Maniac2" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 192, 128 )
+
+[node name="Maniac3" parent="YSort" instance=ExtResource( 12 )]
+position = Vector2( 96, 136 )
 
 [node name="DialougeText" type="Label" parent="."]
 margin_right = 40.0
@@ -586,5 +594,3 @@ margin_bottom = 14.0
 script = ExtResource( 8 )
 
 [node name="DialogueBox" parent="DialougeText" instance=ExtResource( 9 )]
-
-[node name="TransitionScreen" parent="." instance=ExtResource( 10 )]
