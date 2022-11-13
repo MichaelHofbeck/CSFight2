@@ -1,4 +1,4 @@
-[gd_scene load_steps=58 format=2]
+[gd_scene load_steps=60 format=2]
 
 [ext_resource path="res://World/Bush.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -7,6 +7,8 @@
 [ext_resource path="res://World/SandTileSet.png" type="Texture" id=5]
 [ext_resource path="res://World/grassTiles.png" type="Texture" id=6]
 [ext_resource path="res://World/CliffTileset2.png" type="Texture" id=7]
+[ext_resource path="res://Label.gd" type="Script" id=8]
+[ext_resource path="res://DialougeBox.tscn" type="PackedScene" id=9]
 
 [sub_resource type="TileSet" id=1]
 0/name = "SandTileSet.png 0"
@@ -551,3 +553,10 @@ position = Vector2( 303, 116 )
 [node name="CollisionPolygon2D" type="CollisionPolygon2D" parent="YSort/StaticBody2D"]
 position = Vector2( 2, 1 )
 polygon = PoolVector2Array( -1, -2, 0, 181, -5, 188, -11, -23, 404, -14, 387, 203, 0, 181, 329, 180, 320, 179, 320, 0 )
+
+[node name="DialougeText" type="Label" parent="."]
+margin_right = 40.0
+margin_bottom = 14.0
+script = ExtResource( 8 )
+
+[node name="DialogueBox" parent="DialougeText" instance=ExtResource( 9 )]
