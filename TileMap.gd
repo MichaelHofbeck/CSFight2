@@ -11,7 +11,7 @@ func _ready():
 	var rng = RandomNumberGenerator.new()
 	rng.randomize()
 	for i in range(60):
-		set_cell(floor(i%10),floor(i/10), rng.randi_range(0, 5))
+		set_cell(i%10,i/10, rng.randi_range(0, 5))
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.
