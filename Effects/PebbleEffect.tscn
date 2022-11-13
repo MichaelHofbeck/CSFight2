@@ -34,4 +34,5 @@ animations = [ {
 [node name="PebbleEffect" type="AnimatedSprite"]
 frames = SubResource( 11 )
 animation = "Animate"
+centered = false
 script = ExtResource( 2 )
