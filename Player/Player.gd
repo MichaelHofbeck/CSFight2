@@ -23,6 +23,7 @@ onready var swordHitbox = $HitboxPivot/SwordBox
 onready var hurtBox = $Hurtbox
 
 func _ready():
+	randomize()
 	stats.connect("no_health", self, "queue_free")
 	animationTree.active = true
 	swordHitbox.knockback_vector = roll_vector
@@ -72,6 +73,7 @@ func attack_state(detla):
 	animationState.travel("Attack")
 	
 func roll_state(delta):
+	hurtBox.start_inv(0.8)
 	velocity = roll_vector * ROLL_SPEED
 	animationState.travel("Roll")
 	move()
@@ -92,3 +94,5 @@ func _on_Hurtbox_area_entered(area):
 	hurtBox.start_inv(0.8)
 	hurtBox.create_hit_effect()
 	stats.health -= 1
+	if stats.health <= 0:
+		get_tree().change_scene("res://Dead.tscn")
