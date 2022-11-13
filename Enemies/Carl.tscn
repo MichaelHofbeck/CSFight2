@@ -735,7 +735,7 @@ position = Vector2( 0, -12 )
 shape = SubResource( 49 )
 
 [node name="Stats" parent="." instance=ExtResource( 7 )]
-max_health = 5
+max_health = 20
 
 [connection signal="area_entered" from="Hurtbox" to="." method="_on_Hurtbox_area_entered"]
 [connection signal="no_health" from="Stats" to="." method="_on_Stats_no_health"]
