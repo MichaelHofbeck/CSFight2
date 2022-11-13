@@ -1,4 +1,4 @@
-[gd_scene load_steps=11 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://World/brick.png" type="Texture" id=1]
 [ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
@@ -7,7 +7,6 @@
 [ext_resource path="res://Level1.gd" type="Script" id=5]
 [ext_resource path="res://TransitionScreen.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Music/the-beat-of-nature-122841.mp3" type="AudioStream" id=7]
-[ext_resource path="res://World/drawer.png" type="Texture" id=8]
 [ext_resource path="res://Enemies/Maniac.tscn" type="PackedScene" id=9]
 [ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=10]
 
@@ -36,7 +35,7 @@ region_rect = Rect2( -4, -4, 410, 20 )
 [node name="YSort" type="YSort" parent="."]
 
 [node name="Player" parent="YSort" instance=ExtResource( 2 )]
-position = Vector2( 160, 130 )
+position = Vector2( 17.5, 128.75 )
 
 [node name="YSort" type="YSort" parent="YSort"]
 
@@ -196,30 +195,6 @@ position = Vector2( 150, 31.25 )
 [node name="Bookshelf29" parent="YSort/YSort" instance=ExtResource( 4 )]
 position = Vector2( 186.25, 5 )
 
-[node name="Drawer" type="Sprite" parent="YSort/YSort"]
-position = Vector2( 223.75, 83.75 )
-texture = ExtResource( 8 )
-
-[node name="Drawer2" type="Sprite" parent="YSort/YSort"]
-position = Vector2( 280, 83.75 )
-texture = ExtResource( 8 )
-
-[node name="Drawer3" type="Sprite" parent="YSort/YSort"]
-position = Vector2( 268.75, 83.75 )
-texture = ExtResource( 8 )
-
-[node name="Drawer4" type="Sprite" parent="YSort/YSort"]
-position = Vector2( 257.5, 83.75 )
-texture = ExtResource( 8 )
-
-[node name="Drawer5" type="Sprite" parent="YSort/YSort"]
-position = Vector2( 246.25, 83.75 )
-texture = ExtResource( 8 )
-
-[node name="Drawer6" type="Sprite" parent="YSort/YSort"]
-position = Vector2( 235, 83.75 )
-texture = ExtResource( 8 )
-
 [node name="Maniac" parent="YSort" instance=ExtResource( 9 )]
 position = Vector2( 362.5, 190 )
 
@@ -227,7 +202,7 @@ position = Vector2( 362.5, 190 )
 position = Vector2( 372.5, 30 )
 
 [node name="Maniac3" parent="YSort" instance=ExtResource( 9 )]
-position = Vector2( 22.5, 200 )
+position = Vector2( 22.5, 201.25 )
 
 [node name="Maniac4" parent="YSort" instance=ExtResource( 9 )]
 position = Vector2( 352.5, 110 )
