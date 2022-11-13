@@ -1,8 +1,9 @@
 extends KinematicBody2D
 
-const ACCELERATION = 500
-const MAX_SPEED = 125
-const FRICTION = 500
+export var ACCELERATION = 500
+export var MAX_SPEED = 80
+export var ROLL_SPEED = 125
+export var FRICTION = 500
 
 enum {
 	MOVE, 
@@ -12,13 +13,19 @@ enum {
 
 var state = MOVE
 var velocity = Vector2.ZERO
+var roll_vector = Vector2.DOWN
+var stats = PlayerStats
 
 onready var animationPlayer = $AnimationPlayer
 onready var animationTree = $AnimationTree
 onready var animationState = animationTree.get("parameters/playback")
+onready var swordHitbox = $HitboxPivot/SwordBox
+onready var hurtBox = $Hurtbox
 
 func _ready():
+	stats.connect("no_health", self, "queue_free")
 	animationTree.active = true
+	swordHitbox.knockback_vector = roll_vector
 
 func _physics_process(delta):
 	match state:
@@ -26,7 +33,7 @@ func _physics_process(delta):
 			move_state(delta)
 			
 		ROLL:
-			pass
+			roll_state(delta)
 			
 		ATTACK:
 			attack_state(delta)
@@ -38,6 +45,8 @@ func move_state(delta):
 	input_vector = input_vector.normalized()
 	
 	if input_vector != Vector2.ZERO:
+		roll_vector = input_vector
+		swordHitbox.knockback_vector = input_vector
 		animationTree.set("parameters/Idle/blend_position", input_vector)
 		animationTree.set("parameters/Run/blend_position", input_vector)
 		animationTree.set("parameters/Attack/blend_position", input_vector)
@@ -48,7 +57,7 @@ func move_state(delta):
 		animationState.travel("Idle")
 		velocity = velocity.move_toward(Vector2.ZERO, FRICTION * delta)
 		
-	velocity = move_and_slide(velocity)
+	move()
 	
 	if Input.is_action_just_pressed("attack"):
 		state = ATTACK
@@ -60,11 +69,23 @@ func attack_state(detla):
 	animationState.travel("Attack")
 	
 func roll_state(delta):
+	velocity = roll_vector * ROLL_SPEED
 	animationState.travel("Roll")
+	move()
+	
+func move():
+	velocity = move_and_slide(velocity)
 	
 func attack_animation_finished():
+	velocity = velocity * 0.75
 	state = MOVE
 	
 func roll_animation_finished():
 	state = MOVE
 	
+
+
+func _on_Hurtbox_area_entered(area):
+	hurtBox.start_inv(0.8)
+	hurtBox.create_hit_effect()
+	stats.health -= 1

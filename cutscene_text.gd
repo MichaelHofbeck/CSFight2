@@ -37,5 +37,10 @@ func _input(event):
 			if next < dialog.size():
 				clear()
 				add_text(dialog[next])
+			else:
+				$TransitionScreen.show()
+				$TransitionScreen.transition()
+				yield(get_tree().create_timer(1), "timeout")
+				get_tree().change_scene("res://Level1.tscn")
 			next += 1
 
