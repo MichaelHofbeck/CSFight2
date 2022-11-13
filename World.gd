@@ -14,8 +14,8 @@ func _ready():
 
 func _input(_event):
 	if $YSort/Player.get_global_position()[1] <= 0:
-		self.get_child(7).show()
-		self.get_child(7).transition()
+		self.get_child(0).show()
+		self.get_child(0).transition()
 		yield(get_tree().create_timer(1), "timeout")
 		get_tree().change_scene("res://cutscene.tscn")
 	
