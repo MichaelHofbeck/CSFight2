@@ -194,32 +194,26 @@ position = Vector2( 186.25, 5 )
 
 [node name="Drawer" type="Sprite" parent="YSort/YSort"]
 position = Vector2( 223.75, 83.75 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 8 )
 
 [node name="Drawer2" type="Sprite" parent="YSort/YSort"]
 position = Vector2( 280, 83.75 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 8 )
 
 [node name="Drawer3" type="Sprite" parent="YSort/YSort"]
 position = Vector2( 268.75, 83.75 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 8 )
 
 [node name="Drawer4" type="Sprite" parent="YSort/YSort"]
 position = Vector2( 257.5, 83.75 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 8 )
 
 [node name="Drawer5" type="Sprite" parent="YSort/YSort"]
 position = Vector2( 246.25, 83.75 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 8 )
 
 [node name="Drawer6" type="Sprite" parent="YSort/YSort"]
 position = Vector2( 235, 83.75 )
-scale = Vector2( 1, 1 )
 texture = ExtResource( 8 )
 
 [node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
