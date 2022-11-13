@@ -1,10 +1,11 @@
-[gd_scene load_steps=8 format=2]
+[gd_scene load_steps=9 format=2]
 
 [ext_resource path="res://Evan/Title_screen_v3.png" type="Texture" id=1]
 [ext_resource path="res://Title.gd" type="Script" id=2]
 [ext_resource path="res://CreditsButton.tscn" type="PackedScene" id=3]
 [ext_resource path="res://NewGameButton.tscn" type="PackedScene" id=4]
 [ext_resource path="res://TransitionScreen.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Music/the-beat-of-nature-122841.mp3" type="AudioStream" id=6]
 
 [sub_resource type="Animation" id=1]
 resource_name = "Fade"
@@ -84,3 +85,7 @@ margin_bottom = 97.0
 color = Color( 0, 0, 0, 1 )
 
 [node name="TransitionScreen" parent="." instance=ExtResource( 5 )]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer" parent="."]
+stream = ExtResource( 6 )
+autoplay = true
