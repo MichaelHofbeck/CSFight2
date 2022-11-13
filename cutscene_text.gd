@@ -11,7 +11,7 @@ const dialog = [
 	"Wait...",
 	"You survived a hackathon? Maybe you're the programmer we've been waiting for...",
 	"Alright. I'll let you through.",
-	"If you get stuck, just remember that Alvarez drops your lowest homework/quiz grade...",
+	"If you get stuck, remember that Alvarez drops your lowest homework/quiz grade...",
 	"May your luck be O(n) and your troubles O(1).",
 	"",
 ]
