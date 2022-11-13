@@ -72,7 +72,7 @@ func _physics_process(delta):
 				set_position(Vector2(new_x, new_y))
 				self.show()
 				tile_map.tile_set.tile_set_modulate(die, Color( 1, 1, 1, 1 ))
-				if die != tile_map.get_cell(player.get_global_position()[0] / 32, player.get_global_position()[1] / 32):
+				if die != tile_map.get_cell(player.get_global_position()[0] / 32, (player.get_global_position()[1] - 8)/ 32):
 					player.hurtBox.start_inv(0.8)
 					player.hurtBox.create_hit_effect()
 					player.decrement_health()
