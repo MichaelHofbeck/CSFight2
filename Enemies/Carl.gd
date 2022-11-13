@@ -3,7 +3,7 @@ extends KinematicBody2D
 const EnemyDeathEffect = preload("res://Effects/EnemyDeathEffect.tscn")
 
 export var ACCELERATION = 300
-export var MAX_SPEED = 25
+export var MAX_SPEED = 40
 export var FRICTION = 200
 
 enum{
@@ -16,13 +16,26 @@ var state = CHASE
 var velocity = Vector2.ZERO
 var knockback = Vector2.ZERO
 
+onready var animationPlayer = $AnimationPlayer
+onready var animationTree = $AnimationTree
+onready var animationState = animationTree.get("parameters/playback")
+
 onready var sprite = $AnimatedSprite
 onready var stats = $Stats
 onready var playerDetectionZone = $PlayerDetectionZone
 
 func _physics_process(delta):
-	knockback = knockback.move_toward(Vector2.ZERO, 250 * delta)
+	animationTree.active = true
+	knockback = knockback.move_toward(Vector2.ZERO, 200 * delta)
 	knockback = move_and_slide(knockback)
+	
+	if velocity != Vector2.ZERO:
+		animationTree.set("parameters/Idle/blend_position", velocity)
+		animationTree.set("parameters/Run/blend_position", velocity)
+		animationTree.set("parameters/Attack/blend_position", velocity)
+		animationState.travel("Run")
+	else:
+		animationState.travel("Idle")
 	
 	match state:
 		IDLE:
@@ -39,7 +52,6 @@ func _physics_process(delta):
 				velocity = velocity.move_toward(direction * MAX_SPEED, ACCELERATION * delta)
 			else:
 				state = IDLE
-			sprite.flip_h = velocity.x < 0
 	velocity = move_and_slide(velocity)
 	
 			
