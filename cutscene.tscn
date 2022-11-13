@@ -1,4 +1,4 @@
-[gd_scene load_steps=9 format=2]
+[gd_scene load_steps=10 format=2]
 
 [ext_resource path="res://Enemies/bh_front.png" type="Texture" id=1]
 [ext_resource path="res://cutscene_text.gd" type="Script" id=2]
@@ -8,6 +8,7 @@
 [ext_resource path="res://World/cs1_sign.png" type="Texture" id=6]
 [ext_resource path="res://animate_sprites.gd" type="Script" id=7]
 [ext_resource path="res://Enemies/bh_back.png" type="Texture" id=8]
+[ext_resource path="res://TransitionScreen.tscn" type="PackedScene" id=9]
 
 [node name="Node2D" type="Node2D"]
 
@@ -49,3 +50,5 @@ custom_colors/default_color = Color( 0, 0, 0, 1 )
 custom_fonts/mono_font = ExtResource( 3 )
 custom_fonts/normal_font = ExtResource( 3 )
 script = ExtResource( 2 )
+
+[node name="TransitionScreen" parent="RichTextLabel" instance=ExtResource( 9 )]
