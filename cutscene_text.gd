@@ -13,9 +13,10 @@ const dialog = [
 	"Alright. I'll let you through.",
 	"If you get stuck, just remember that Alvarez drops your lowest homework/quiz grade...",
 	"May your luck be O(n) and your troubles O(1).",
+	"",
 ]
 var sinceUpdate = 0
-var next = 1
+export var next = 1
 
 # Called when the node enters the scene tree for the first time.
 func _ready():
@@ -30,10 +31,10 @@ func _process(delta):
 # Called every event
 func _input(event):
 	if event is InputEventKey and event.pressed:
-		if event.scancode == KEY_ENTER and sinceUpdate > 1.5:
+		if event.scancode == KEY_ENTER and sinceUpdate > 1.1:
 			sinceUpdate = 0
 			if next < dialog.size():
 				clear()
 				add_text(dialog[next])
-				next += 1
+			next += 1
 
