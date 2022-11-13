@@ -591,7 +591,6 @@ margin_bottom = 14.0
 script = ExtResource( 8 )
 
 [node name="DialogueBox" parent="DialougeText" instance=ExtResource( 9 )]
-visible = false
 position = Vector2( 0, -16 )
 
 [node name="HealthUI" parent="." instance=ExtResource( 15 )]
