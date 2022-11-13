@@ -19,7 +19,7 @@ func _ready():
 	set_process_input(true)
 
 func _input(event):
-	if event is InputEventKey and event.pressed:
+	if Input.is_action_just_pressed("ui_accept"):
 		if page == dialouge.size() - 1 and get_visible_characters() > get_total_character_count():
 			get_parent().queue_free()
 		if get_visible_characters() > get_total_character_count():
