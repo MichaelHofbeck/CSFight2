@@ -1,4 +1,4 @@
-[gd_scene load_steps=57 format=2]
+[gd_scene load_steps=58 format=2]
 
 [ext_resource path="res://Enemies/Carl.gd" type="Script" id=1]
 [ext_resource path="res://Enemies/Carl.png" type="Texture" id=2]
@@ -7,6 +7,7 @@
 [ext_resource path="res://Hurtboxes + Hitboxes/Hurtbox.tscn" type="PackedScene" id=5]
 [ext_resource path="res://Effects/PlayerDetectionZone.tscn" type="PackedScene" id=6]
 [ext_resource path="res://Stats.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Shadows/MediumShadow.png" type="Texture" id=8]
 
 [sub_resource type="CapsuleShape2D" id=1]
 radius = 2.49999
@@ -660,6 +661,11 @@ offset = Vector2( 0, -9 )
 hframes = 60
 frame = 1
 
+[node name="ShadowSprite" type="Sprite" parent="."]
+show_behind_parent = true
+position = Vector2( 0, -3 )
+texture = ExtResource( 8 )
+
 [node name="CollisionShape2D" type="CollisionShape2D" parent="."]
 position = Vector2( 1, -6 )
 rotation = 1.5708
@@ -700,25 +706,31 @@ position = Vector2( 0, -10 )
 rotation = 1.5708
 
 [node name="SwordBox" parent="HitboxPivot" instance=ExtResource( 3 )]
+visible = false
 position = Vector2( 15, 4 )
 collision_mask = 8
 script = ExtResource( 4 )
 
 [node name="CollisionShape2D" parent="HitboxPivot/SwordBox" index="0"]
+visible = false
 position = Vector2( 0, -4 )
 shape = SubResource( 36 )
 disabled = true
 
 [node name="Hurtbox" parent="." instance=ExtResource( 5 )]
+visible = false
 collision_layer = 8
 
 [node name="CollisionShape2D" parent="Hurtbox" index="0"]
+visible = false
 position = Vector2( 0, -13 )
 shape = SubResource( 48 )
 
 [node name="PlayerDetectionZone" parent="." instance=ExtResource( 6 )]
+visible = false
 
 [node name="CollisionShape2D" parent="PlayerDetectionZone" index="0"]
+visible = false
 position = Vector2( 0, -12 )
 shape = SubResource( 49 )
 
