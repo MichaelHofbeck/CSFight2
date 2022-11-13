@@ -49,14 +49,6 @@ texture = ExtResource( 1 )
 anims/Fade = SubResource( 1 )
 anims/RESET = SubResource( 2 )
 
-[node name="ColorRect" type="ColorRect" parent="."]
-visible = false
-margin_left = -164.0
-margin_top = -99.0
-margin_right = 166.0
-margin_bottom = 97.0
-color = Color( 0, 0, 0, 1 )
-
 [node name="Menu" type="VBoxContainer" parent="."]
 margin_left = -140.0
 margin_top = -10.0
@@ -81,3 +73,10 @@ scene_to_load = "res://cutscene.tscn"
 [node name="CreditsButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 3 )]
 margin_top = 36.0
 margin_bottom = 68.0
+
+[node name="ColorRect" type="ColorRect" parent="."]
+margin_left = -164.0
+margin_top = -99.0
+margin_right = 166.0
+margin_bottom = 97.0
+color = Color( 0, 0, 0, 1 )
