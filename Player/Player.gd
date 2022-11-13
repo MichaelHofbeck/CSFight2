@@ -29,7 +29,10 @@ func _ready():
 	swordHitbox.knockback_vector = roll_vector
 
 func decrement_health():
-	stats.health -= 1
+	if hurtBox.invincible == false:
+		stats.health -= 1
+		if stats.health <= 0:
+			get_tree().change_scene("res://Dead.tscn")
 
 func _physics_process(delta):
 	match state:
@@ -88,7 +91,12 @@ func attack_animation_finished():
 func roll_animation_finished():
 	state = MOVE
 	
+func upgrade_health():
+	stats.set_health(stats.health + 2)
+	stats.set_max_health(stats.max_health + 2)
 
+func upgrade_damage():
+	swordHitbox.damage += 1
 
 func _on_Hurtbox_area_entered(area):
 	hurtBox.start_inv(0.8)
