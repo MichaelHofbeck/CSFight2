@@ -69,11 +69,12 @@ size_flags_vertical = 3
 
 [node name="NewGameButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 4 )]
 margin_bottom = 32.0
-scene_to_load = "res://cutscene.tscn"
+scene_to_load = "res://World.tscn"
 
 [node name="CreditsButton" parent="Menu/CenterRow/Buttons" instance=ExtResource( 3 )]
 margin_top = 36.0
 margin_bottom = 68.0
+scene_to_load = "res://Credits.tscn"
 
 [node name="ColorRect" type="ColorRect" parent="."]
 margin_left = -164.0

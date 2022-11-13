@@ -32,7 +32,7 @@ func _process(delta):
 # Called every event
 func _input(event):
 	if event is InputEventKey and event.pressed:
-		if event.scancode == KEY_ENTER and sinceUpdate > 1.1:
+		if event.scancode == KEY_ENTER and sinceUpdate > 0.5:
 			sinceUpdate = 0
 			if next < dialog.size():
 				clear()
