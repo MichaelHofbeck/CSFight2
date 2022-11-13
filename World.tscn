@@ -528,6 +528,7 @@ tile_data = PoolIntArray( -65533, 0, 0, -65532, 0, 65536, -65531, 0, 65536, 3, 0
 [node name="CliffTiles" type="TileMap" parent="."]
 tile_set = SubResource( 2 )
 cell_size = Vector2( 32, 32 )
+collision_mask = 0
 format = 1
 tile_data = PoolIntArray( -65533, 0, 0, -65532, 0, 1, -65531, 0, 2, 3, 0, 131072, 4, 0, 65544, 5, 0, 131074, 8, 0, 0, 9, 0, 1, 10, 0, 2, 65540, 0, 131075, 65544, 0, 131072, 65545, 0, 65542, 65546, 0, 65538, 131081, 0, 131072, 131082, 0, 131074, 262143, 0, 0, 196608, 0, 2, 327679, 0, 131072, 262144, 0, 131074, 262150, 0, 0, 262151, 0, 2, 327685, 0, 0, 327686, 0, 131078, 327687, 0, 131077, 327688, 0, 2, 393221, 0, 131072, 393222, 0, 131073, 393223, 0, 131073, 393224, 0, 131074 )
 
@@ -552,6 +553,9 @@ position = Vector2( 28, 23 )
 
 [node name="Pebbles" type="YSort" parent="YSort"]
 
+[node name="Pebble7" parent="YSort/Pebbles" instance=ExtResource( 1 )]
+position = Vector2( 80, 176 )
+
 [node name="Pebble" parent="YSort/Pebbles" instance=ExtResource( 1 )]
 position = Vector2( 48, 112 )
 
@@ -569,3 +573,15 @@ position = Vector2( 32, 112 )
 
 [node name="Pebble6" parent="YSort/Pebbles" instance=ExtResource( 1 )]
 position = Vector2( 32, 96 )
+
+[node name="Pebble8" parent="YSort/Pebbles" instance=ExtResource( 1 )]
+position = Vector2( 48, 176 )
+
+[node name="Pebble9" parent="YSort/Pebbles" instance=ExtResource( 1 )]
+position = Vector2( 144, 176 )
+
+[node name="Pebble10" parent="YSort/Pebbles" instance=ExtResource( 1 )]
+position = Vector2( 144, 168 )
+
+[node name="Pebble11" parent="YSort/Pebbles" instance=ExtResource( 1 )]
+position = Vector2( 64, 176 )

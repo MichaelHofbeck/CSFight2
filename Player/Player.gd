@@ -5,7 +5,7 @@ const MAX_SPEED = 125
 const FRICTION = 500
 
 enum {
-	MOVE,
+	MOVE, 
 	ROLL,
 	ATTACK
 }
@@ -20,7 +20,7 @@ onready var animationState = animationTree.get("parameters/playback")
 func _ready():
 	animationTree.active = true
 
-func _process(delta):
+func _physics_process(delta):
 	match state:
 		MOVE:
 			move_state(delta)
