@@ -11,7 +11,6 @@ func _ready():
 	var rng = RandomNumberGenerator.new()
 	rng.randomize()
 	for i in range(60):
-		print(i%10, floor(i/10))
 		set_cell(floor(i%10),floor(i/10), rng.randi_range(0, 5))
 
 
