@@ -15,7 +15,6 @@ script = ExtResource( 5 )
 [node name="TransitionScreen" parent="." instance=ExtResource( 6 )]
 
 [node name="Brick" type="Sprite" parent="."]
-scale = Vector2( 1, 1 )
 texture = ExtResource( 1 )
 centered = false
 region_enabled = true
