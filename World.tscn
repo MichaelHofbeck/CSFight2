@@ -582,18 +582,18 @@ position = Vector2( 32, 128 )
 [node name="Pebble5" parent="YSort/Pebbles" instance=ExtResource( 1 )]
 position = Vector2( 32, 112 )
 
-[node name="Rocks" type="YSort" parent="."]
+[node name="Rocks" type="YSort" parent="YSort"]
 
-[node name="Rock" parent="Rocks" instance=ExtResource( 3 )]
+[node name="Rock" parent="YSort/Rocks" instance=ExtResource( 3 )]
 position = Vector2( 89, 55 )
 
-[node name="Rock2" parent="Rocks" instance=ExtResource( 3 )]
+[node name="Rock2" parent="YSort/Rocks" instance=ExtResource( 3 )]
 position = Vector2( 303, 116 )
 
-[node name="Rock3" parent="Rocks" instance=ExtResource( 3 )]
+[node name="Rock3" parent="YSort/Rocks" instance=ExtResource( 3 )]
 position = Vector2( 111, 177 )
 
-[node name="Rock4" parent="Rocks" instance=ExtResource( 3 )]
+[node name="Rock4" parent="YSort/Rocks" instance=ExtResource( 3 )]
 position = Vector2( 28, 23 )
 
 [node name="DialougeText" type="Label" parent="."]
