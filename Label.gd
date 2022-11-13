@@ -1,7 +1,7 @@
 extends Label
 
 
-var dList = ["Welcome to CS Fight II...", "Use the arrows to move around and spacebar to attack. ","Walk up to get started!"]
+var dList = ["Welcome to CS Fight II...", "Use the arrows to move around and spacebar to attack. ", "Press shift to roll.","Walk up to get started!"]
 
 # Called when the node enters the scene tree for the first time.
 func _ready():

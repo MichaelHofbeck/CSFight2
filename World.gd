@@ -10,7 +10,7 @@ extends Node2D
 func _ready():
 	$TransitionScreen/AnimationPlayer.play("fade_to_normal")
 	yield(get_tree().create_timer(1), "timeout")
-	self.get_child(7).hide()
+	self.get_child(0).hide()
 
 func _input(_event):
 	if $YSort/Player.get_global_position()[1] <= 0 and ($YSort/Player.get_global_position()[0] <= 320 and $YSort/Player.get_global_position()[0] >= 200):
