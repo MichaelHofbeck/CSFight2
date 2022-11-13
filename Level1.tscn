@@ -90,6 +90,36 @@ position = Vector2( 242.5, 58.75 )
 [node name="Bookshelf33" parent="YSort/YSort" instance=ExtResource( 4 )]
 position = Vector2( 81.25, 155 )
 
+[node name="Bookshelf43" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 221.25, 190 )
+
+[node name="Bookshelf52" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 233.75, 190 )
+
+[node name="Bookshelf44" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 208.75, 190 )
+
+[node name="Bookshelf45" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 196.25, 190 )
+
+[node name="Bookshelf46" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 183.75, 190 )
+
+[node name="Bookshelf47" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 130, 190 )
+
+[node name="Bookshelf48" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 117.5, 190 )
+
+[node name="Bookshelf49" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 105, 190 )
+
+[node name="Bookshelf50" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 92.5, 190 )
+
+[node name="Bookshelf51" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 81.25, 190 )
+
 [node name="Bookshelf34" parent="YSort/YSort" instance=ExtResource( 4 )]
 position = Vector2( 93.75, 155 )
 
