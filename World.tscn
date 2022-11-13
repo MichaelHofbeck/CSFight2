@@ -9,8 +9,9 @@
 [ext_resource path="res://World/CliffTileset2.png" type="Texture" id=7]
 [ext_resource path="res://Label.gd" type="Script" id=8]
 [ext_resource path="res://DialougeBox.tscn" type="PackedScene" id=9]
-[ext_resource path="res://TransitionScreen.tscn" type="PackedScene" id=10]
-[ext_resource path="res://World/CollisionTile.tscn" type="PackedScene" id=11]
+[ext_resource path="res://World/CollisionTile.tscn" type="PackedScene" id=10]
+[ext_resource path="res://TransitionScreen.tscn" type="PackedScene" id=11]
+[ext_resource path="res://World.gd" type="Script" id=12]
 
 [sub_resource type="TileSet" id=1]
 0/name = "SandTileSet.png 0"
