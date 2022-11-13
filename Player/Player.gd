@@ -5,7 +5,7 @@ const MAX_SPEED = 125
 const FRICTION = 500
 
 enum {
-	MOVE,
+	MOVE, 
 	ROLL,
 	ATTACK
 }
@@ -41,6 +41,7 @@ func move_state(delta):
 		animationTree.set("parameters/Idle/blend_position", input_vector)
 		animationTree.set("parameters/Run/blend_position", input_vector)
 		animationTree.set("parameters/Attack/blend_position", input_vector)
+		animationTree.set("parameters/Roll/blend_position", input_vector)
 		animationState.travel("Run")
 		velocity = velocity.move_toward(input_vector * MAX_SPEED, ACCELERATION * delta)
 	else:
@@ -52,9 +53,18 @@ func move_state(delta):
 	if Input.is_action_just_pressed("attack"):
 		state = ATTACK
 
+	if Input.is_action_just_pressed("roll"):
+		state = ROLL
+
 func attack_state(detla):
 	animationState.travel("Attack")
 	
+func roll_state(delta):
+	animationState.travel("Roll")
+	
 func attack_animation_finished():
+	state = MOVE
+	
+func roll_animation_finished():
 	state = MOVE
 	
