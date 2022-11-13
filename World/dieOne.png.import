@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/overview.PNG-5614f09a79f688626767a376c5968f12.stex"
+path="res://.import/dieOne.png-1a731deebc8e6409aedfa12f122f42b0.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Fonts/overview.PNG"
-dest_files=[ "res://.import/overview.PNG-5614f09a79f688626767a376c5968f12.stex" ]
+source_file="res://World/dieOne.png"
+dest_files=[ "res://.import/dieOne.png-1a731deebc8e6409aedfa12f122f42b0.stex" ]
 
 [params]
 
