@@ -1,6 +1,5 @@
 extends RichTextLabel
 
-
 # Declare member variables here. Examples:
 # var a = 2
 # var b = "text"
@@ -11,16 +10,18 @@ const dialog = [
 	"Wait...",
 	"You survived a hackathon? Maybe you're the programmer we've been waiting for...",
 	"Alright. I'll let you through.",
-	"If you get stuck, just remember that Alvarez drops your lowest homework/quiz grade...",
+	"If you get stuck, remember that Alvarez drops your lowest homework/quiz grade...",
 	"May your luck be O(n) and your troubles O(1).",
 	"",
 ]
 var sinceUpdate = 0
 export var next = 1
 
+# onready var test = $TransitionScreen/AnimationPlayer.play("fade_to_normal")
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	add_text(dialog[0])
+	$TransitionScreen/AnimationPlayer.play("fade_to_normal")
 	# push_font(get_font("normal_font"))
 
 # Called every frame. 'delta' is the elapsed time (in seconds) since the previous frame.
