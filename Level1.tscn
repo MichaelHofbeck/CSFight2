@@ -1,0 +1,193 @@
+[gd_scene load_steps=5 format=2]
+
+[ext_resource path="res://World/brick.png" type="Texture" id=1]
+[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://World/cobblestone.png" type="Texture" id=3]
+[ext_resource path="res://World/Bookshelf.tscn" type="PackedScene" id=4]
+
+[node name="Brick" type="Sprite"]
+position = Vector2( -2, 0 )
+scale = Vector2( 0.8, 0.8 )
+texture = ExtResource( 1 )
+centered = false
+region_enabled = true
+region_rect = Rect2( -4, -4, 400, 230 )
+
+[node name="Cobblestone" type="Sprite" parent="."]
+position = Vector2( 201.25, 120 )
+texture = ExtResource( 3 )
+region_enabled = true
+region_rect = Rect2( -4, -4, 410, 20 )
+
+[node name="YSort" type="YSort" parent="."]
+
+[node name="Player" parent="YSort" instance=ExtResource( 2 )]
+position = Vector2( 160, 130 )
+
+[node name="YSort" type="YSort" parent="YSort"]
+
+[node name="Bookshelf" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 62.5, 71.25 )
+
+[node name="Bookshelf2" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 62.5, 57.5 )
+
+[node name="Bookshelf3" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 138.75, 86.25 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf4" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 186.25, 45 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf5" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 62.5, 85 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf6" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 101.25, 58.75 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf7" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 101.25, 45 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf8" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 101.25, 31.25 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf9" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 101.25, 85 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf10" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 101.25, 72.5 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf11" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 138.75, 45 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf12" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 138.75, 58.75 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf13" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 138.75, 72.5 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf14" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 138.75, 31.25 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf15" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 126.25, 31.25 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf16" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 113.75, 31.25 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf17" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 230, 45 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf30" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 242.5, 58.75 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf33" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 81.25, 155 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf34" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 93.75, 155 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf35" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 106.25, 155 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf36" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 118.75, 155 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf37" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 130, 155 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf38" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 183.75, 155 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf39" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 196.25, 155 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf40" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 207.5, 155 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf41" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 218.75, 155 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf42" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 231.25, 155 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf31" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 230, 58.75 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf32" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 242.5, 45 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf18" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 62.5, 31.25 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf19" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 62.5, 43.75 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf20" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 101.25, 18.75 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf21" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 186.25, 85 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf22" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 186.25, 71.25 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf23" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 186.25, 57.5 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf24" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 186.25, 18.75 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf25" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 90, 31.25 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf26" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 186.25, 31.25 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf27" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 175, 31.25 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf28" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 150, 31.25 )
+scale = Vector2( 1, 1 )
+
+[node name="Bookshelf29" parent="YSort/YSort" instance=ExtResource( 4 )]
+position = Vector2( 186.25, 5 )
+scale = Vector2( 1, 1 )
