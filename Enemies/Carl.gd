@@ -53,10 +53,8 @@ func _physics_process(delta):
 			state = IDLE
 		if new_x == -1:
 			rng.randomize()
-			
 		in_attack += delta
 		if in_attack > 2:
-			
 			last_attack = 0
 			in_attack = 0
 			new_x = -1
@@ -86,10 +84,8 @@ func _physics_process(delta):
 			velocity = velocity.move_toward(Vector2.ZERO, 200 * delta)
 			if not last_attack > 3.8:
 				seek_player()
-			
 		WANDER:
 			pass
-			
 		CHASE:
 			var player = playerDetectionZone.player
 			if player != null:
