@@ -20,8 +20,10 @@ script = ExtResource( 5 )
 visible = false
 
 [node name="Brick" type="Sprite" parent="."]
+position = Vector2( 293.75, 153.75 )
 texture = ExtResource( 1 )
 centered = false
+offset = Vector2( -293.75, -153.75 )
 region_enabled = true
 region_rect = Rect2( 0, 0, 406.344, 228.32 )
 
