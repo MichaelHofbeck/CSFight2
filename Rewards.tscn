@@ -52,10 +52,13 @@ visible = false
 [node name="PlayerStats" parent="." instance=ExtResource( 6 )]
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
+visible = false
 
 [node name="SwordBox" parent="." instance=ExtResource( 7 )]
+visible = false
 
 [node name="Carl" parent="." instance=ExtResource( 8 )]
+visible = false
 
 [connection signal="pressed" from="VBoxContainer/Button" to="." method="_on_Button1_pressed"]
 [connection signal="pressed" from="VBoxContainer2/Button" to="." method="_on_Button2_pressed"]

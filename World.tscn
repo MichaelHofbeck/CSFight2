@@ -599,3 +599,5 @@ position = Vector2( 0, -16 )
 stream = ExtResource( 12 )
 volume_db = -19.0
 autoplay = true
+
+[editable path="YSort/Rocks/Rock3"]
