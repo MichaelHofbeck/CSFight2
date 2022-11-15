@@ -1,13 +1,14 @@
 [gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://Evan/Rewards_V1.png" type="Texture" id=1]
-[ext_resource path="res://ARCADECLASSIC.TTF" type="DynamicFontData" id=2]
-[ext_resource path="res://Rewards.gd" type="Script" id=3]
-[ext_resource path="res://TransitionScreen.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Player/PlayerStats.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Hurtboxes + Hitboxes/Hitbox.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Enemies/Carl.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Main/ScreenScenes/Helper/Rewards/Rewards_V1.png" type="Texture" id=1]
+[ext_resource path="res://Main/Assets/Fonts/ARCADECLASSIC.TTF" type="DynamicFontData" id=2]
+[ext_resource path="res://Main/ScreenScenes/Helper/Rewards/Rewards.gd" type="Script" id=3]
+[ext_resource path="res://Main/ScreenScenes/Helper/Transitions/TransitionScreen.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Main/Assets/Entities/Player/Player.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Main/Assets/Entities/Player/PlayerStats.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Main/Assets/GeneralAssets/Hitboxes&Hurtboxes/Hitbox.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Main/Assets/Entities/Enemies/Bosses/Carl/Carl.tscn" type="PackedScene" id=8]
+
 
 [sub_resource type="DynamicFont" id=1]
 font_data = ExtResource( 2 )

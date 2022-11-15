@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/the-beat-of-nature-122841.mp3-2cefd062278c28194305df8fdee77efd.mp3str"
+path="res://.import/the-beat-of-nature-122841.mp3-a64454a8a43820b4be60dbfb1ecb7826.mp3str"
 
 [deps]
 
-source_file="res://Music/the-beat-of-nature-122841.mp3"
-dest_files=[ "res://.import/the-beat-of-nature-122841.mp3-2cefd062278c28194305df8fdee77efd.mp3str" ]
+source_file="res://Main/Assets/Music/General/the-beat-of-nature-122841.mp3"
+dest_files=[ "res://.import/the-beat-of-nature-122841.mp3-a64454a8a43820b4be60dbfb1ecb7826.mp3str" ]
 
 [params]
 

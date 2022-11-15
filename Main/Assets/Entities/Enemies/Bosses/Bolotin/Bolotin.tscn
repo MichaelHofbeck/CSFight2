@@ -1,12 +1,13 @@
 [gd_scene load_steps=57 format=2]
 
-[ext_resource path="res://Player/SwordHitbox.gd" type="Script" id=1]
-[ext_resource path="res://Hurtboxes + Hitboxes/Hitbox.tscn" type="PackedScene" id=2]
-[ext_resource path="res://Stats.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Hurtboxes + Hitboxes/Hurtbox.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Enemies/Bolotin.png" type="Texture" id=5]
-[ext_resource path="res://Effects/PlayerDetectionZone.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Enemies/Carl.gd" type="Script" id=7]
+[ext_resource path="res://Main/Assets/GeneralAssets/Hitboxes&Hurtboxes/SwordHitbox.gd" type="Script" id=1]
+[ext_resource path="res://Main/Assets/GeneralAssets/Hitboxes&Hurtboxes/Hitbox.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Main/Assets/Entities/Enemies/General/Stats/Stats.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Main/Assets/GeneralAssets/Hitboxes&Hurtboxes/Hurtbox.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Main/Assets/Entities/Enemies/Bosses/Bolotin/Bolotin.png" type="Texture" id=5]
+[ext_resource path="res://Main/Assets/Entities/Enemies/General/PlayerDetection/PlayerDetectionZone.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Main/Assets/Entities/Enemies/Bosses/Carl/Carl.gd" type="Script" id=7]
+
 
 [sub_resource type="CapsuleShape2D" id=48]
 radius = 2.49999

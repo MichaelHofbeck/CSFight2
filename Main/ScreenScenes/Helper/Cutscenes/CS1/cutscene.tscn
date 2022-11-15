@@ -6,9 +6,10 @@
 [ext_resource path="res://World/chat_bubble.png" type="Texture" id=4]
 [ext_resource path="res://World/hell_background.png" type="Texture" id=5]
 [ext_resource path="res://World/cs1_sign.png" type="Texture" id=6]
-[ext_resource path="res://animate_sprites.gd" type="Script" id=7]
+[ext_resource path="res://Main/ScreenScenes/Helper/Cutscenes/CS1/animate_sprites.gd" type="Script" id=7]
 [ext_resource path="res://Enemies/bh_back.png" type="Texture" id=8]
 [ext_resource path="res://TransitionScreen.tscn" type="PackedScene" id=9]
+
 
 [node name="Node2D" type="Node2D"]
 

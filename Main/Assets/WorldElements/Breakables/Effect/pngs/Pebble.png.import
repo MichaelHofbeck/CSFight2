@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Player.png-84a497f4be0ee5bfcc764df0180e9f19.stex"
+path="res://.import/Pebble.png-784a5cb18f3918e2fa464baf4daa588d.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Main/Assets/Entities/Player/Player.png"
-dest_files=[ "res://.import/Player.png-84a497f4be0ee5bfcc764df0180e9f19.stex" ]
+source_file="res://Main/Assets/WorldElements/Breakables/Effect/pngs/Pebble.png"
+dest_files=[ "res://.import/Pebble.png-784a5cb18f3918e2fa464baf4daa588d.stex" ]
 
 [params]
 

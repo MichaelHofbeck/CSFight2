@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Player.png-84a497f4be0ee5bfcc764df0180e9f19.stex"
+path="res://.import/dieFour.png-46cd65e3aaf44f0b47705a791cbe9689.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Main/Assets/Entities/Player/Player.png"
-dest_files=[ "res://.import/Player.png-84a497f4be0ee5bfcc764df0180e9f19.stex" ]
+source_file="res://Main/Assets/WorldElements/Floor/Static/die/dieFour.png"
+dest_files=[ "res://.import/dieFour.png-46cd65e3aaf44f0b47705a791cbe9689.stex" ]
 
 [params]
 

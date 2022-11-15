@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Player.png-84a497f4be0ee5bfcc764df0180e9f19.stex"
+path="res://.import/Win.png-ee40e194102ef920104379a69ec4242e.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Main/Assets/Entities/Player/Player.png"
-dest_files=[ "res://.import/Player.png-84a497f4be0ee5bfcc764df0180e9f19.stex" ]
+source_file="res://Main/ScreenScenes/Helper/Transitions/Win.png"
+dest_files=[ "res://.import/Win.png-ee40e194102ef920104379a69ec4242e.stex" ]
 
 [params]
 

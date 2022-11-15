@@ -1,15 +1,16 @@
 [gd_scene load_steps=11 format=2]
 
-[ext_resource path="res://World/brick.png" type="Texture" id=1]
-[ext_resource path="res://Player/Player.tscn" type="PackedScene" id=2]
-[ext_resource path="res://World/cobblestone.png" type="Texture" id=3]
-[ext_resource path="res://World/Bookshelf.tscn" type="PackedScene" id=4]
-[ext_resource path="res://Level1.gd" type="Script" id=5]
-[ext_resource path="res://TransitionScreen.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Music/the-beat-of-nature-122841.mp3" type="AudioStream" id=7]
-[ext_resource path="res://World/drawer.png" type="Texture" id=8]
-[ext_resource path="res://Enemies/Maniac.tscn" type="PackedScene" id=9]
-[ext_resource path="res://UI/HealthUI.tscn" type="PackedScene" id=10]
+[ext_resource path="res://Main/Assets/WorldElements/Floor/Static/brick.png" type="Texture" id=1]
+[ext_resource path="res://Main/Assets/Entities/Player/Player.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Main/Assets/WorldElements/Floor/Static/cobblestone.png" type="Texture" id=3]
+[ext_resource path="res://Main/Assets/WorldElements/Breakables/Object/Bookshelf/Bookshelf.tscn" type="PackedScene" id=4]
+[ext_resource path="res://Main/ScreenScenes/Levels/CS1/Level1.gd" type="Script" id=5]
+[ext_resource path="res://Main/ScreenScenes/Helper/Transitions/TransitionScreen.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Main/Assets/Music/General/the-beat-of-nature-122841.mp3" type="AudioStream" id=7]
+[ext_resource path="res://Main/Assets/WorldElements/Breakables/Effect/pngs/drawer.png" type="Texture" id=8]
+[ext_resource path="res://Main/Assets/Entities/Enemies/Simple/Maniac/Maniac.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Main/Assets/UI/HealthUI/HealthUI.tscn" type="PackedScene" id=10]
+
 
 [node name="Level1" type="Node2D"]
 position = Vector2( -2, 0 )

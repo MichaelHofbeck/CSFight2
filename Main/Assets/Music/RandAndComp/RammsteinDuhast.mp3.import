@@ -2,12 +2,12 @@
 
 importer="mp3"
 type="AudioStreamMP3"
-path="res://.import/RammsteinDuhast.mp3-9ccaae09bc2b5a7c30e32fa9587899f1.mp3str"
+path="res://.import/RammsteinDuhast.mp3-9ed45d3a622f8c6ef2e7d860f65301da.mp3str"
 
 [deps]
 
-source_file="res://Music/RammsteinDuhast.mp3"
-dest_files=[ "res://.import/RammsteinDuhast.mp3-9ccaae09bc2b5a7c30e32fa9587899f1.mp3str" ]
+source_file="res://Main/Assets/Music/RandAndComp/RammsteinDuhast.mp3"
+dest_files=[ "res://.import/RammsteinDuhast.mp3-9ed45d3a622f8c6ef2e7d860f65301da.mp3str" ]
 
 [params]
 

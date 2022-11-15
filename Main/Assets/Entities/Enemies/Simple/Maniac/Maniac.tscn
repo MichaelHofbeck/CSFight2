@@ -1,14 +1,15 @@
 [gd_scene load_steps=21 format=2]
 
-[ext_resource path="res://Enemies/Enemy1.png" type="Texture" id=1]
-[ext_resource path="res://Shadows/SmallShadow.png" type="Texture" id=2]
-[ext_resource path="res://Hurtboxes + Hitboxes/Hurtbox.tscn" type="PackedScene" id=3]
-[ext_resource path="res://Enemies/Maniac.gd" type="Script" id=4]
-[ext_resource path="res://Stats.tscn" type="PackedScene" id=5]
-[ext_resource path="res://Effects/PlayerDetectionZone.tscn" type="PackedScene" id=6]
-[ext_resource path="res://Hurtboxes + Hitboxes/Hitbox.tscn" type="PackedScene" id=7]
-[ext_resource path="res://Hurtboxes + Hitboxes/SoftCollision.tscn" type="PackedScene" id=8]
-[ext_resource path="res://Enemies/WanderController.tscn" type="PackedScene" id=9]
+[ext_resource path="res://Main/Assets/Entities/Enemies/Simple/Maniac/Maniac.png" type="Texture" id=1]
+[ext_resource path="res://Main/Assets/GeneralAssets/Shadows/SmallShadow.png" type="Texture" id=2]
+[ext_resource path="res://Main/Assets/GeneralAssets/Hitboxes&Hurtboxes/Hurtbox.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Main/Assets/Entities/Enemies/Simple/Maniac/Maniac.gd" type="Script" id=4]
+[ext_resource path="res://Main/Assets/Entities/Enemies/General/Stats/Stats.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Main/Assets/Entities/Enemies/General/PlayerDetection/PlayerDetectionZone.tscn" type="PackedScene" id=6]
+[ext_resource path="res://Main/Assets/GeneralAssets/Hitboxes&Hurtboxes/Hitbox.tscn" type="PackedScene" id=7]
+[ext_resource path="res://Main/Assets/GeneralAssets/Collisions/SoftCollision.tscn" type="PackedScene" id=8]
+[ext_resource path="res://Main/Assets/Entities/Enemies/General/Behavior/WanderController.tscn" type="PackedScene" id=9]
+
 
 [sub_resource type="AtlasTexture" id=1]
 atlas = ExtResource( 1 )

@@ -2,15 +2,15 @@
 
 importer="texture"
 type="StreamTexture"
-path="res://.import/Player.png-84a497f4be0ee5bfcc764df0180e9f19.stex"
+path="res://.import/SandTileSet.png-ec5b723e737cdf901a8bf720cada6274.stex"
 metadata={
 "vram_texture": false
 }
 
 [deps]
 
-source_file="res://Main/Assets/Entities/Player/Player.png"
-dest_files=[ "res://.import/Player.png-84a497f4be0ee5bfcc764df0180e9f19.stex" ]
+source_file="res://Main/Assets/WorldElements/Floor/TileMaps/pngs/SandTileSet.png"
+dest_files=[ "res://.import/SandTileSet.png-ec5b723e737cdf901a8bf720cada6274.stex" ]
 
 [params]
 
