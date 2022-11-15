@@ -53,6 +53,10 @@ visible = false
 
 [node name="Player" parent="." instance=ExtResource( 5 )]
 visible = false
+ACCELERATION = 500
+MAX_SPEED = 80
+ROLL_SPEED = 125
+FRICTION = 500
 
 [node name="SwordBox" parent="." instance=ExtResource( 7 )]
 visible = false

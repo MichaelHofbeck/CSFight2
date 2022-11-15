@@ -21,6 +21,7 @@ onready var animationTree = $AnimationTree
 onready var animationState = animationTree.get("parameters/playback")
 onready var swordHitbox = $HitboxPivot/SwordBox
 onready var hurtBox = $Hurtbox
+onready var sprite = $Sprite
 
 func _ready():
 	randomize()
@@ -96,6 +97,8 @@ func upgrade_health():
 	stats.set_max_health(stats.max_health + 2)
 
 func upgrade_damage():
+	sprite.scale += sprite.scale * 0.2
+	print(sprite.scale)
 	stats.set_strength(stats.strength + 1)
 
 func _on_Hurtbox_area_entered(area):
