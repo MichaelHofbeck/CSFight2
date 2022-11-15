@@ -27,6 +27,7 @@ func _ready():
 	stats.connect("no_health", self, "queue_free")
 	animationTree.active = true
 	swordHitbox.knockback_vector = roll_vector
+	swordHitbox.damage = stats.strength
 
 func decrement_health():
 	stats.health -= 1
@@ -95,7 +96,7 @@ func upgrade_health():
 	stats.set_max_health(stats.max_health + 2)
 
 func upgrade_damage():
-	swordHitbox.upgrade_damage()
+	stats.set_strength(stats.strength + 1)
 
 func _on_Hurtbox_area_entered(area):
 	hurtBox.start_inv(0.8)

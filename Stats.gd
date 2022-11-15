@@ -2,10 +2,12 @@ extends Node
 
 export(int) var max_health = 1 setget set_max_health
 var health = max_health setget set_health
+export(int) var strength = 1 setget set_strength
 
 signal no_health
 signal health_changed(value)
 signal max_health_changed(value)
+signal set_strength(value)
 
 func set_max_health(value):
 	max_health = value
@@ -17,6 +19,10 @@ func set_health(value):
 	emit_signal("health_changed", health)
 	if health <= 0:
 		emit_signal("no_health")
+		
+func set_strength(value):
+	strength = value
+	emit_signal("strength_changed", strength)
 		
 func _ready():
 	self.health = max_health

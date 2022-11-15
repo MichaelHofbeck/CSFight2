@@ -21,7 +21,7 @@ func _on_Button1_pressed():
 
 func _on_Button2_pressed():
 	#$Player/Player.get_stats.damage += 1
-	carl.dec_health()
+	playerStats.upgrade_damage()
 	self.get_child(3).show()
 	self.get_child(3).transition()
 	yield(get_tree().create_timer(1), "timeout")
